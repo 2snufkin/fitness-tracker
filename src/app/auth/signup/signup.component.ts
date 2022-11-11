@@ -13,6 +13,6 @@ export class SignupComponent implements OnInit {
   }
 
   onSumbit(form: any) {
-    
+    console.log(form)
   }
 }
