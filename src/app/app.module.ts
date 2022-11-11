@@ -11,6 +11,8 @@ import { CurrentComponent } from './training/current/current.component';
 import { NewComponent } from './training/new/new.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import {RoutingModule} from './app.routing'
+import {MaterialModule} from "./material.module";
+import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,9 @@ import {RoutingModule} from './app.routing'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RoutingModule
+    RoutingModule,
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

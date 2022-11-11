@@ -1,1 +1,25 @@
-<p>signup works!</p>
+<section>
+  <form #form="ngForm" (ngSubmit)="onSumbit(form)">
+<!--    name-->
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput name="name" ngModel placeholder="Name">
+    </mat-form-field>
+
+<!--    email-->
+    <mat-form-field appearance="fill">
+      <input type="email "matInput name="email" email ngModel placeholder="=Email">
+    </mat-form-field>
+
+<!--    birth date-->
+    <mat-form-field>
+    <input matInput  [matDatepicker]="datebirth"  name="birth" ngModel>
+    <mat-datepicker-toggle [for]="datebirth"></mat-datepicker-toggle>
+    <mat-datepicker #datebirth></mat-datepicker>
+    </mat-form-field>
+<!--    agree to condition-->
+    <mat-checkbox>Agree to the terms</mat-checkbox>
+
+  <button type="submit">SignUp</button>
+  </form>
+</section>
