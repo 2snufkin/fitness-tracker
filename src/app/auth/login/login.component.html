@@ -1,1 +1,16 @@
-<p>login works!</p>
+<section fxLayoutAlign="center center" >
+  <form #loginF="ngForm" (ngSubmit)="onLogin(loginF)" fxLayout="column" fxLayoutGap="10px" >
+<!--    username-->
+    <mat-form-field >
+      <mat-label>Username</mat-label>
+      <input matInput name="username" ngModel>
+    </mat-form-field>
+<!--    password-->
+    <mat-form-field hintLabel="Max 6 letters">
+      <mat-label>Password</mat-label>
+      <input maxlength="6" matInput name="password" type="password" ngModel #password>
+    <mat-hint align="end" > {{password.value?.length || 0}}/6</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button type="submit">Login</button>
+  </form>
+</section>
