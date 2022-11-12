@@ -13,6 +13,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import {RoutingModule} from './app.routing'
 import {MaterialModule} from "./material.module";
 import {FormsModule} from "@angular/forms";
+import {FlexLayoutModule} from "@angular/flex-layout";
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import {FormsModule} from "@angular/forms";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     RoutingModule,
     MaterialModule,
     FormsModule

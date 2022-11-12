@@ -1,14 +1,14 @@
 <section>
-  <form #form="ngForm" (ngSubmit)="onSumbit(form)">
+  <form #form="ngForm" (ngSubmit)="onSumbit(form)" fxLayout="column" fxLayoutAlign="center center">
 <!--    name-->
-    <mat-form-field appearance="fill">
+    <mat-form-field >
       <mat-label>Name</mat-label>
       <input matInput name="name" ngModel placeholder="Name">
     </mat-form-field>
 
 <!--    email-->
-    <mat-form-field appearance="fill">
-      <input type="email "matInput name="email" email ngModel placeholder="=Email">
+    <mat-form-field >
+      <input type="email" matInput name="email" email ngModel placeholder="Email" required>
     </mat-form-field>
 
 <!--    birth date-->
@@ -20,6 +20,7 @@
 <!--    agree to condition-->
     <mat-checkbox>Agree to the terms</mat-checkbox>
 
-  <button type="submit">SignUp</button>
+  <button mat-raised-button type="submit" [disabled]="form.invalid">SignUp</button>
   </form>
 </section>
+
