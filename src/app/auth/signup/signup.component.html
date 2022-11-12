@@ -18,7 +18,7 @@
     <mat-datepicker #datebirth></mat-datepicker>
     </mat-form-field>
 <!--    agree to condition-->
-    <mat-checkbox>Agree to the terms</mat-checkbox>
+    <mat-checkbox required ngModel name="agree">Agree to the terms</mat-checkbox>
 
   <button mat-raised-button type="submit" [disabled]="form.invalid">SignUp</button>
   </form>
