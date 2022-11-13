@@ -14,6 +14,7 @@ import {RoutingModule} from './app.routing'
 import {MaterialModule} from "./material.module";
 import {FormsModule} from "@angular/forms";
 import {FlexLayoutModule} from "@angular/flex-layout";
+import { NavigationComponent } from './navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import {FlexLayoutModule} from "@angular/flex-layout";
     PastComponent,
     CurrentComponent,
     NewComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

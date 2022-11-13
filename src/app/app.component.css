@@ -1,1 +1,27 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: dodgerblue;
+}
+.active {
+  color: #04AA6D;
+}
+
+.example-spacer {
+  flex: 1 1  auto;
+}
+mat-sidenav-content, mat-sidenav{
+  height: 100%;
+}
+mat-sidenav{
+  background-color: aquamarine;
+}

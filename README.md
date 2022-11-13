@@ -19,7 +19,7 @@ A fitness tracker app built with Angular + Material + FxLayout
 1. create a sidenav, that contains "I am a side nav" 
 2. Create a nav bar that will contain the links
 3. Make the page responsive:
-make the navbar accessible only on small screens, 
+make the sidebar accessible only on small screens, 
 the links on the navbar visible only on large screens
 4. Replace "I am a side nav" with the links and their icons
 5. When clicking on a link in the side nav, it should be closed
