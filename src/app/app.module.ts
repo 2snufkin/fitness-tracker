@@ -14,7 +14,10 @@ import {RoutingModule} from './app.routing'
 import {MaterialModule} from "./material.module";
 import {FormsModule} from "@angular/forms";
 import {FlexLayoutModule} from "@angular/flex-layout";
-import { NavigationComponent } from './navigation/navigation.component';
+import { ToolbarComponent } from './navigation/toolbar/toolbar.component';
+import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,9 @@ import { NavigationComponent } from './navigation/navigation.component';
     CurrentComponent,
     NewComponent,
     WelcomeComponent,
-    NavigationComponent
+    ToolbarComponent,
+    SidenavComponent,
+
   ],
   imports: [
     BrowserModule,

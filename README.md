@@ -24,8 +24,9 @@ the links on the navbar visible only on large screens
 4. Replace "I am a side nav" with the links and their icons
 5. When clicking on a link in the side nav, it should be closed
 6. Split the navbar and the sidenav into different components
+7. Create welcome comp with 3 h1 and p. row layout on small devices and col ion bigger
 7. on the training component: create tabs for past and current
-8. Add a card
+8. Add a card: title , content and buttons
 9. Add a dropdown menu for the different trainings
 10. Create a spinner and tie it with a timer of 30 seconds
 11. Create a dialog component, pass data form the dialog to the component who open it

@@ -1,22 +1,13 @@
-<mat-sidenav-container  >
-  <mat-sidenav #sidenav>Start nav </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <div>
-        <button mat-icon-button (click)="sidenav.toggle()" fxHide.gt-xs> <mat-icon>menu</mat-icon></button>
-      </div>
-<!--      right items-->
-      <div fxFlex fxHide.xs>
-      <ul fxLayout="row" fxLayoutGap="10px "   fxLayoutAlign="end" >
-        <li><a routerLink="/login">Login</a></li>
-        <li><a routerLink="/signup">Signup</a></li>
-        <li><a routerLink="/training">Training</a> </li>
-      </ul>
-      </div>
-    </mat-toolbar>
-
-<!--    end of toolbar-->
-    <router-outlet  ></router-outlet>
+<mat-sidenav-container class="sidenav-container">
+<!--  inject sidenav-->
+  <mat-sidenav #sidenav class="sidenav">
+    <!--the child want to let know of the parent when a link  button is being click so the parent can close the sidenav-->
+    <app-sidenav (linkEmitter)="sidenav.close()"></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-content">
+<!--the child want to let know of the parent when the menu button is being click-->
+    <app-toolbar (menuEvent)="sidenav.toggle()"></app-toolbar>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
 

@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <div>
+    <button mat-icon-button (click)="informSideNav()" fxHide.gt-xs> <mat-icon>menu</mat-icon></button>
+  </div>
+  <!--      right items-->
+  <div fxFlex fxHide.xs>
+    <ul fxLayout="row" fxLayoutGap="10px "   fxLayoutAlign="end" >
+      <li *ngFor="let link of navigation">
+        <a routerLink="/{{link.toLowerCase()}}">{{link}}</a></li>
+    </ul>
+  </div>
+</mat-toolbar>
+<!--    end of toolbar-->

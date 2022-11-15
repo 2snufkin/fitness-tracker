@@ -19,9 +19,17 @@ li a:hover {
 .example-spacer {
   flex: 1 1  auto;
 }
-mat-sidenav-content, mat-sidenav{
+
+
+.sidenav-container {
   height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
-mat-sidenav{
-  background-color: aquamarine;
+
+.sidenav-content {
+  height: 100%!important;
+}
+
+.sidenav {
+  padding: 20px;
 }
