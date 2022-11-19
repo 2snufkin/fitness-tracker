@@ -10,7 +10,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  color: dodgerblue;
+  color: deeppink;
 }
 .active {
   color: #04AA6D;
