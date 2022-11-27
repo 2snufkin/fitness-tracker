@@ -28,6 +28,8 @@ the links on the navbar visible only on large screens
 8. on the training component: create tabs for past and current - V
 9. Add a card: title , content and buttons - V
 10. Add a dropdown menu for the different trainings
-11. Create a spinner and tie it with a timer of 30 seconds
+11. Create a spinner and tie it with a timer of 30 seconds -
+TODO : design a solution for the passing of data between parent and child. What happen when the
+12. user click on start button , what should happen when he clicks on stop
 12. Create a dialog component, pass data form the dialog to the component who open it
 
