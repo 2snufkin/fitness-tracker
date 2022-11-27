@@ -16,6 +16,7 @@ import {FormsModule} from "@angular/forms";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { ToolbarComponent } from './navigation/toolbar/toolbar.component';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+import { TrainingCardComponent } from './training-card/training-card.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
     WelcomeComponent,
     ToolbarComponent,
     SidenavComponent,
+    TrainingCardComponent,
 
   ],
   imports: [

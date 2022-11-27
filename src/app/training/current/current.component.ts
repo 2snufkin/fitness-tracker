@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./current.component.css']
 })
 export class CurrentComponent implements OnInit {
+  title = "Current Training";
 
   constructor() { }
 

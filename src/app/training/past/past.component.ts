@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./past.component.css']
 })
 export class PastComponent implements OnInit {
+  title = "Past training";
 
   constructor() { }
 

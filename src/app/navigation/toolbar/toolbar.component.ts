@@ -15,7 +15,7 @@ export class ToolbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.navigation = this.navService.get_navi_links()
+    this.navigation = this.navService.get_navi_links();
   }
 
 

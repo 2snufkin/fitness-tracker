@@ -7,4 +7,10 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   height: 100%;
 }
-
+.center {
+  margin: auto;
+  width: 50%;
+}
+.mat-tab-body-wrapper{
+  height: 100%;
+}

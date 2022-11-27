@@ -2,12 +2,23 @@
   <div>
     <button mat-icon-button (click)="informSideNav()" fxHide.gt-xs> <mat-icon>menu</mat-icon></button>
   </div>
+  <ul>
+    <li>
+      <a><mat-icon routerLink="/welcome">home</mat-icon></a>
+    </li>
+  </ul>
   <!--      right items-->
   <div fxFlex fxHide.xs>
+
     <ul fxLayout="row" fxLayoutGap="10px "   fxLayoutAlign="end" >
       <li *ngFor="let link of navigation">
-        <a routerLink="/{{link.toLowerCase()}}">{{link}}</a></li>
+        <a routerLink="/{{link.toLowerCase()}}">{{link}}</a>
+      </li>
+      <li class="move_down">      <a>      <mat-icon class="material-symbols-outlined">login</mat-icon></a></li>
+
+
     </ul>
+
   </div>
 </mat-toolbar>
 <!--    end of toolbar-->
