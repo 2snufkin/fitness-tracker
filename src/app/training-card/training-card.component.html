@@ -9,6 +9,6 @@
     <mat-card-actions>
       <button mat-raised-button color="primary" (click)="toogle_spinner()">{{left_button}}</button>
     </mat-card-actions>
-    <mat-progress-spinner *ngIf="running" mode="determinate" [value]="progress" color="accent"></mat-progress-spinner>
+    <mat-progress-spinner *ngIf="is_show" mode="determinate" [value]="clock_progress" color="accent"></mat-progress-spinner>
 
   </mat-card>
