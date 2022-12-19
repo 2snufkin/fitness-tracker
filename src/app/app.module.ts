@@ -17,6 +17,10 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import { ToolbarComponent } from './navigation/toolbar/toolbar.component';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 import { TrainingCardComponent } from './training-card/training-card.component';
+import { PiniComponent } from './pini/pini.component';
+import {AngularFireModule} from "@angular/fire/compat";
+import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
+import {environment} from "../environments/environment";
 
 
 @NgModule({
@@ -32,6 +36,7 @@ import { TrainingCardComponent } from './training-card/training-card.component';
     ToolbarComponent,
     SidenavComponent,
     TrainingCardComponent,
+    PiniComponent,
 
   ],
   imports: [
@@ -40,7 +45,9 @@ import { TrainingCardComponent } from './training-card/training-card.component';
     FlexLayoutModule,
     RoutingModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

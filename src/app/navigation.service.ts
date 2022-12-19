@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class NavigationService {
-  private navigation : string [] = ['Training', 'Avishay','Login', 'Signup']
+  private navigation : string [] = ['Training', 'Summer','Login', 'Signup']
   constructor() { }
 
   get_navi_links(){

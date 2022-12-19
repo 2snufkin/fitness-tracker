@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {EyeExcService} from "../eye-exc.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-welcome',
@@ -6,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
-   h1 = ['Energy', 'Vitality', 'Mode'];
+   eyeExe$ : Observable<any> |undefined
 
-  constructor() { }
+  constructor(private eyeExeService: EyeExcService) { }
 
   ngOnInit(): void {
+     this.eyeExe$ = this.eyeExeService.getAllExcercies();
+
   }
 
 }
