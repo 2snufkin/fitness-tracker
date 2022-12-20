@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import {User} from '../../interfaces/user'
+import {user} from "@angular/fire/auth";
+import {AuthService} from "../../services/auth.service";
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -7,12 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
   }
 
   onSumbit(form: any) {
-    console.log(form)
+    let user :  User = {
+      email: form.email,
+      password: form.password
+    }
+    console.log(user)
+    this.authService.singup(user);
+
+
   }
 }

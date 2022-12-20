@@ -11,10 +11,16 @@
   <div fxFlex fxHide.xs>
 
     <ul fxLayout="row" fxLayoutGap="10px "   fxLayoutAlign="end" >
-      <li *ngFor="let link of navigation">
-        <a routerLink="/{{link.toLowerCase()}}">{{link}}</a>
+      <li >
+        <a routerLink="/training" >Training</a>
+        <!--      show only if logout => if isInside-->
+
+        <a routerLink="/login" *ngIf="!isInside" >Login</a>
+        <a routerLink="/signup" (click)="disconnect()" >Signup</a>
+
       </li>
-      <li class="move_down">      <a>      <mat-icon class="material-symbols-outlined">login</mat-icon></a></li>
+<!--      show only if login => if isInside-->
+      <li class="move_down" *ngIf="isInside"  (click)="disconnect()">      <a>      <mat-icon class="material-symbols-outlined">login</mat-icon></a></li>
 
 
     </ul>

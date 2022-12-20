@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import {NavigationService} from "../../navigation.service";
+import {NavigationService} from "../../services/navigation.service";
+import {AuthService} from "../../services/auth.service";
 
 @Component({
   selector: 'app-toolbar',
@@ -8,19 +9,26 @@ import {NavigationService} from "../../navigation.service";
 })
 export class ToolbarComponent implements OnInit {
   @Output() menuEvent: EventEmitter<void> = new EventEmitter<void>();
+  isInside = false;
 
-  navigation: string [] = []
 
-  constructor(private navService: NavigationService) {
+  constructor(private authService: AuthService) {
   }
 
   ngOnInit(): void {
-    this.navigation = this.navService.get_navi_links();
+   this.authService.isLoginSubject.subscribe( r=> {
+     this.isInside = r;
+   })
   }
 
 
   informSideNav() {
     this.menuEvent.emit();
     console.log("was emitted");
+  }
+
+
+  disconnect() {
+    this.authService.logOut();
   }
 }

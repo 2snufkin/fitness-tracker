@@ -1,0 +1,7 @@
+.create an auth service
+.create methods for login logout and signup
+create isAuth method and pass it to App
+--------------------
+navbar
+if login show logout hide signup
+

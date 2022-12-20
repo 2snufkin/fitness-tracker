@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import {NavigationService} from "../../navigation.service";
+import {NavigationService} from "../../services/navigation.service";
 
 @Component({
   selector: 'app-sidenav',

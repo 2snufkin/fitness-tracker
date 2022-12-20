@@ -1,10 +1,8 @@
 <!--Create welcome comp with 3 h1 and p. row layout on small devices and col ion bigger-->
-<section fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="30px" >
-
-  <div *ngFor="let eyeEx  of eyeExe$ | async" >
-    <h1>{{eyeEx.name}}</h1>
-    <p>It will boost your {{eyeEx.how}}</p>
-  </div>
+<section fxLayout="row" fxLayout.lt-sm="row" fxLayoutGap="30px" >
+  <div *ngFor="let eyeEx  of eyeExe$ | async " >
+    <app-training-card [header]="eyeEx.name" [desc]="eyeEx.how" [left_button]='button'></app-training-card>
+   </div>
 
 
 </section>

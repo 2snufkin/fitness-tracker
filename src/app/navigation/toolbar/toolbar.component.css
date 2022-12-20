@@ -6,6 +6,7 @@ ul {
 li a {
   color: white;
   text-decoration: none;
+  padding: 20px;
 }
 
 /* Change the link color to #111 (black) on hover */
